@@ -1,0 +1,30 @@
+{
+    "name": "yhshanto/larapress",
+    "description": "Wordpress Plugin Boilerplate in laravel 5.5.* flavour.",
+    "type": "library",
+    "require": {
+        "illuminate/database": "5.5.*",
+        "illuminate/view": "5.5.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yousuf Hossain Shanto",
+            "email": "yousuf.hossain.shanto@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugin\\": "plugin/"
+        },
+        "files": [
+            "config/plugin.php",
+            "plugin/Lpress/helpers.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"rename('larapress.php', strtolower(basename(__DIR__)) . '.php');\""
+        ]
+    }
+}
