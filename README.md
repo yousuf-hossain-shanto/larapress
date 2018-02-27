@@ -17,7 +17,7 @@ composer create-project yhshanto/larapress plugin-name
 
 After install larapress project open plugin-name.php file and edit following as your need.
 
-```
+```php
 /*
  * Plugin Name:       Your Plugin name
  * Plugin URI:        your-plugin-url
@@ -39,16 +39,17 @@ To Use **Wordpress Database** like **Laravel Eloquent** Style, First Create A cl
 
 Example **plugin/Post.php**
 
-    <?php
-    
-    namespace Plugin;
-    
-    use Illuminate\Database\Eloquent\Model;
-    
-    class Post extends Model
-    {
-        //
-    }
+```php
+<?php
+namespace Plugin;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model
+{
+    //
+}
+```
 
 You Can Use It Like **Plugin\Post::all()** Which return all post from wordpress database.
 
@@ -62,13 +63,14 @@ All view file must be store in **resources/views** folder.
 
 Example: **resources/views/welcome.blade.php**
 
-    <h1>
-    	{{ $heading }}
-    </h1>
-    
-    <p>
-    	{!! $description !!}
-    </p>
+```php
+<h1>
+    {{ $heading }}
+</h1>
+<p>
+    {!! $description !!}
+</p>
+```
 
 You Can Use This View By view( $view, $data = array(), $return = false ) function.
 
