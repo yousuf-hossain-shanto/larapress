@@ -2,7 +2,7 @@
 
 ![](https://i.imgur.com/Xfxbbkc.png)
 
-![](https://img.shields.io/badge/stable-v1.1-brightgreen.svg) ![](https://img.shields.io/badge/license-MIT-%2346897A.svg)
+![](https://img.shields.io/badge/stable-v1.3-brightgreen.svg) ![](https://img.shields.io/badge/license-MIT-%2346897A.svg)
 
 # Requirements
 
